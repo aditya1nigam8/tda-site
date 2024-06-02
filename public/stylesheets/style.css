@@ -407,11 +407,6 @@ img[src="png/logo-white.png"], img[src="png/tda-iecse.png"] {
 	transform: translateX(-50%) translateY(-50%);
 }
 
-
-.activity .card_credit .container_image img[src="activity/board-transfer.jpg"] {
-	opacity: 0.3;
-}
-
 .activity .card_credit a {
 	position: relative;
 	background: rgb(255,255,255,0.25);
@@ -462,6 +457,11 @@ img[src="png/logo-white.png"], img[src="png/tda-iecse.png"] {
 .upcoming {
 	color: rgb(255, 107, 181);
 	background-color: rgb(255, 107, 181, 0.2);
+}
+
+.ongoing {
+	color: rgb(255, 255, 0);
+	background-color: rgb(255, 255, 0, 0.15);
 }
 
 .completed {
