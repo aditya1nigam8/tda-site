@@ -63,10 +63,6 @@ ul {
 	transition: 0.2s ease;
 }
 
-ul:hover {
-	background-color: rgb(0,0,0,0.15);
-}
-
 ul li {
 	display: inline-block;
 
@@ -348,7 +344,7 @@ header p {
 	width: 200px;
 	height: 200px;
 	float: left;
-	margin: 10px 10px 10px 10px;
+	margin: 10px;
 	transition: 0.2s ease;
 	box-shadow: 0px 0px 4px rgb(0,0,0,0.3);
 }
@@ -397,14 +393,6 @@ header p {
 	width: 100%;
 	height: auto;
 	top: 0px;
-}
-
-img[src="png/logo-white.png"], img[src="png/tda-iecse.png"] {
-	z-index: 9999;
-	position: absolute;
-	left: 50%;
-	top: 50px;
-	transform: translateX(-50%) translateY(-50%);
 }
 
 .activity .card_credit a {
@@ -514,7 +502,6 @@ input[id="2022"]:after {
 
 .filters {
 	position: absolute;
-	left: 0;
+	right: 22px;
 	top: 0;
-	transform: translateY(+15%);
 }
