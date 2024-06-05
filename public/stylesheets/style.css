@@ -4,15 +4,15 @@
 }
 
 ::-webkit-scrollbar {
-	width: 5px;
+	width: 4px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #001450;
+  background: rgb(0,0,0,0.2);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #5CE1E6;
+  background: rgb(255,255,255,0.3);
   border-radius: 1000px;
 }
 
@@ -28,11 +28,11 @@
 body {
     overflow-x: hidden;
     overflow-y: scroll;
-    background-color: #001450;
+    background-color: #020f38;
 }
 
 header {
-	height: 100vh;
+	height: 80px;
 }
 .insta {
 	float: left;
@@ -50,7 +50,7 @@ nav {
 	top: 0;
 	width: 100%;
 	height: 85px;
-	background: #001450;
+	background: #020f38;
 	transition: all 1s ease-out;
 	z-index: 999999;
 }
@@ -98,13 +98,13 @@ ul li a:hover {
 }
 
 .active a {
-    color: #001450;
+    color: #020f38;
 }
 
 .active a:hover {
 	border-radius: 1000px;
     background: #5CE1E6;
-	color: #001450;
+	color: #020f38;
 	padding: 5px 15px;
 }
 
@@ -113,8 +113,9 @@ footer {
     height: 90px;
     width: 100%;
     bottom: 0px;
-    background: #1A2B5D;
+    background: rgb(255,255,255,0.04);
 	padding-top: 15px;
+	text-align: left;
 }
 
 footer h2 {
@@ -207,22 +208,24 @@ footer h3 {
 	display: inline-block;
 }
 
-header .intro {
-	position: absolute;
-	top: 25%;
+.intro {
+	position: relative;
 	width: 1000px;
 	left: 50%;
 	transform: translateX(-50%);
+	height: 520px;
 }
 
-header h1 {
+.intro h1 {
+	margin-top: 60px;
 	color: #5CE1E6;
 	font-family: 'Poppins';
 	font-size: 42pt;
 	line-height: 38pt;
 }
 
-header p {
+.intro p {
+	position: relative;
 	color: #ffff;
 	font-family: 'Fira Code';
 	font-size: 14pt;
@@ -318,12 +321,14 @@ header p {
 }
 
 .activity {
-	position: absolute;
-	margin-top: 100px;
+	position: relative;
+	top: 0px;
+	margin-top: 30px;
 	width: 900px;
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
+	height: 85vh;
 }
 
 .activity h1 {
@@ -484,7 +489,7 @@ input[type="checkbox"]:checked {
 }
 
 input[type="checkbox"]:checked:after {
-	color: #001450;
+	color: #020f38;
 }
 
 input[id="all"]:after {
@@ -504,4 +509,101 @@ input[id="2022"]:after {
 	position: absolute;
 	right: 22px;
 	top: 0;
+}
+
+.about-tda {
+	position: relative;
+	margin-top: 20px;
+	height: fit-content;
+	width: 1000px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+.about-tda h1,.advisory-board h1, .board h1, .mancomm h1 {
+	color: #5CE1E6;
+	font-family: 'Poppins';
+	font-size: 18pt;
+	line-height: 18pt;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.about-tda p {
+	color: rgb(255,255,255,0.5);
+	font-size: 12pt;
+	text-align: left;
+	width: 60%;
+	font-family: 'Fira Sans';
+	position: relative;
+	left: 0;
+	margin-bottom: 50px;
+}
+
+.video-placeholder {
+	position: absolute;
+	width: 300px;
+	height: 150px;
+	border-radius: 20px;
+	background-color: #000;
+	right: 0;
+	top: 30px;
+}
+
+.advisory-board {
+	position: relative;
+	width: 1000px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: fit-content;
+}
+
+
+.board {
+	position: relative;
+	width: 1000px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 300px;
+}
+
+.mancomm {
+	width: 1000px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.mancomm-table {
+	height: 230px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	margin-bottom: 40px;
+}
+
+.mancomm table {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1000px;
+	color: rgb(255,255,255,0.7);
+	text-align: center;
+	border-spacing: 20px 15px;
+}
+
+.mancomm table td {
+	background-color: rgb(92, 225, 230, 0.1);
+	border-radius: 7px;
+	line-height: 30pt;
+	font-size: 9pt;
+	font-family: 'Fira Sans';
+	text-transform: uppercase;
+}
+.advisory-board .credits {
+	position: relative;
+	width: 1000px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
 }
