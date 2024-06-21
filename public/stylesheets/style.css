@@ -35,7 +35,6 @@ header {
 	min-height: 85px;
 }
 .insta {
-	float: left;
 	margin-top: 25px;
 	display: inline-block;
 }
@@ -553,21 +552,23 @@ input[id="2022"]:after {
 
 .advisory-board {
 	position: relative;
-	width: 1000px;
+	width: 800px;
 	left: 50%;
 	transform: translateX(-50%);
 	height: fit-content;
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 
 .board {
 	position: relative;
-	width: 1000px;
+	width: 800px;
 	left: 50%;
 	transform: translateX(-50%);
-	height: 200px;
+	height: fit-content;
+	text-align: center;
+	margin-bottom: 30px;
 }
 
 .mancomm {
@@ -602,35 +603,29 @@ input[id="2022"]:after {
 	font-family: 'Fira Sans';
 	text-transform: uppercase;
 }
-.advisory-board .credits {
-	position: relative;
-	width: 1000px;
-	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
-}
 
-.advisory-board .card_credit{
+.advisory-board .card_credit, .board .card_credit {
 	text-align: center;
 	font-family: 'Fira Sans';
 	margin: 0 30px 0 30px;
-	width: fit-content;
+	width: 200px;
 	display: inline-block;
+	margin-bottom: 20px;
 }
 
-.advisory-board .card_credit img {
+.advisory-board .card_credit img, .board .card_credit img {
 	width: 100px;
 	height: 100px;
 	border-radius: 100%;
 }
 
-.advisory-board .card_credit h3 {
+.advisory-board .card_credit h3, .board .card_credit h3 {
 	color: rgb(255,255,255,0.8);
 	font-size: 12pt;
 	margin-top: 5px;
 }
 
-.advisory-board .card_credit h4{
+.advisory-board .card_credit h4, .board .card_credit h4 {
 	color: rgb(255,255,255,0.4);
 	font-size: 9pt;
 	font-weight: normal;
