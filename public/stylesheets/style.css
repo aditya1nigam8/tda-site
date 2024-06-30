@@ -1,3 +1,8 @@
+:root {
+	--color1: transparent;
+	--color2: #020f38;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -18,11 +23,6 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #E7E7E7;
-}
-
-:root {
-	--color1: transparent;
-	--color2: rgba(20,20,20);
 }
 
 body {
@@ -49,7 +49,7 @@ nav {
 	top: 0;
 	width: 100%;
 	height: 85px;
-	background: #020f38;
+	background: var(--color1);
 	transition: all 1s ease-out;
 	z-index: 999999;
 }
@@ -212,11 +212,12 @@ footer h3 {
 	width: 1000px;
 	left: 50%;
 	transform: translateX(-50%);
-	height: 520px;
+	height: 45vh;
 }
 
 .intro h1 {
-	margin-top: 60px;
+	position: relative;
+	top: 120px;
 	color: #5CE1E6;
 	font-family: 'Fira Sans';
 	font-size: 42pt;
@@ -228,7 +229,7 @@ footer h3 {
 	color: #ffff;
 	font-family: 'Fira Code';
 	font-size: 14pt;
-	margin-top: 5px;
+	margin-top: 130px;
 }
 
 .credits {
@@ -311,12 +312,12 @@ footer h3 {
 }
 .container_cards {
 	text-align: center;
-	background-color: #000;
 	max-width: 1000px;
-	width: fit-content;
-	position: relative;
+	width: 880px;
+	position: absolute;
 	left: 50%;
-	transform: translateX(-50%) scale(1.02);
+	top: 50%;
+	transform: translate(-50%, -50%) scale(1.13);
 }
 
 .activity {
@@ -327,10 +328,12 @@ footer h3 {
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
-	height: 85vh;
+	height: 100vh;
 }
 
 .activity h1 {
+	position: relative;
+	top: 50px;
 	color: #5CE1E6;
 	font-family: 'Fira Sans';
 	font-size: 18pt;
@@ -343,7 +346,7 @@ footer h3 {
 .activity .card_credit {
 	position: relative;
 	text-align: center;
-	background-color: rgb(92, 225, 230, 0.1);
+	background-color: rgb(11, 36, 73);
 	border-radius: 15px;
 	width: 200px;
 	height: 200px;
@@ -504,11 +507,11 @@ input[id="2022"]:after {
 	content: '2022';
 }
 
-.filters {
+/*.filters {
 	position: absolute;
 	right: 22px;
-	top: 0;
-}
+	top: 50;
+}*/
 
 .about-tda {
 	position: relative;
@@ -721,4 +724,25 @@ input[id="2022"]:after {
 
 .contact form button i {
 	transform: translateX(-10%);
+}
+
+.contact-container {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1000px;
+	height: 80vh;
+}
+
+.background {
+	top: 0;
+	background: url('moneyball.jpg') rgba(0,0,0,0.8);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	position: absolute;
 }
