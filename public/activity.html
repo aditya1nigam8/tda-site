@@ -34,14 +34,14 @@
 		</nav>
 	</header>
 		<div class="activity">
-			<form class="filters">
-				<input type="checkbox" id="all">
-				<input type="checkbox" id="2024">
-				<input type="checkbox" id="2023">
-				<input type="checkbox" id="2022">
+			<form id="filters" class="filters">
+				<input type="checkbox" id="all"  onclick="update_cards()">
+				<input type="checkbox" id="2024" onclick="update_cards()">
+				<input type="checkbox" id="2023" onclick="update_cards()">
+				<input type="checkbox" id="2022" onclick="update_cards()">
 			</form>
 			<h1>Club Events & Activities</h1>
-			<div class="container_cards">
+			<div id="event_cards" class="container_cards">
 				<a href="#">
 					<div class="card_credit">
 						<div class="status upcoming">UPCOMING</div>
@@ -120,9 +120,10 @@
 					</div>
 				</a>
 			</div>
-		</div>
-
-	<footer>
+  </div>
+    <script src="/javascripts/activity.js"> </script>
+  
+  <footer>
 		<h2>Made with ❤️ by <a href="credits.html"><u>Team TDA</u></a></h2>
 		<h3>Copyright © 2024, The Data Alchemists. All Rights Reserved.</h3>
 		<div class="redirect">
