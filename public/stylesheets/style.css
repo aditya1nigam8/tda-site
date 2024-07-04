@@ -1,18 +1,23 @@
+:root {
+	--color1: transparent;
+	--color2: #020f38;
+}
+
 * {
     padding: 0;
     margin: 0;
 }
 
 ::-webkit-scrollbar {
-	width: 5px;
+	width: 4px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #001450;
+  background: rgb(0,0,0,0.2);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #5CE1E6;
+  background: rgb(255,255,255,0.3);
   border-radius: 1000px;
 }
 
@@ -20,22 +25,16 @@
   background: #E7E7E7;
 }
 
-:root {
-	--color1: transparent;
-	--color2: rgba(20,20,20);
-}
-
 body {
     overflow-x: hidden;
     overflow-y: scroll;
-    background-color: #001450;
+    background-color: #020f38;
 }
 
 header {
-	height: 100vh;
+	min-height: 85px;
 }
 .insta {
-	float: left;
 	margin-top: 25px;
 	display: inline-block;
 }
@@ -50,7 +49,7 @@ nav {
 	top: 0;
 	width: 100%;
 	height: 85px;
-	background: #001450;
+	background: var(--color1);
 	transition: all 1s ease-out;
 	z-index: 999999;
 }
@@ -61,10 +60,6 @@ ul {
 	margin-top: 25px;
 	border-radius: 1000px;
 	transition: 0.2s ease;
-}
-
-ul:hover {
-	background-color: rgb(0,0,0,0.15);
 }
 
 ul li {
@@ -102,13 +97,13 @@ ul li a:hover {
 }
 
 .active a {
-    color: #001450;
+    color: #020f38;
 }
 
 .active a:hover {
 	border-radius: 1000px;
     background: #5CE1E6;
-	color: #001450;
+	color: #020f38;
 	padding: 5px 15px;
 }
 
@@ -116,9 +111,10 @@ footer {
     position: relative;
     height: 90px;
     width: 100%;
-    bottom: 0px;
-    background: #1A2B5D;
+    bottom: 0;
+    background: rgb(255,255,255,0.04);
 	padding-top: 15px;
+	text-align: left;
 }
 
 footer h2 {
@@ -138,7 +134,7 @@ footer h2 a {
 }
 
 footer h2 a u {
-	border-bottom: 1.5px dotted #ffff;
+	border-bottom: 1.5px dotted rgb(255,255,255);
 	text-decoration: none;
 }
 
@@ -211,31 +207,34 @@ footer h3 {
 	display: inline-block;
 }
 
-header .intro {
-	position: absolute;
-	top: 25%;
+.intro {
+	position: relative;
 	width: 1000px;
 	left: 50%;
 	transform: translateX(-50%);
+	height: 54.3vh;
 }
 
-header h1 {
+.intro h1 {
+	position: relative;
+	top: 120px;
 	color: #5CE1E6;
-	font-family: 'Poppins';
+	font-family: 'Fira Sans';
 	font-size: 42pt;
 	line-height: 38pt;
 }
 
-header p {
+.intro p {
+	position: relative;
 	color: #ffff;
 	font-family: 'Fira Code';
 	font-size: 14pt;
-	margin-top: 5px;
+	margin-top: 130px;
 }
 
 .credits {
 	position: absolute;
-	top: 50%;
+	top: 42%;
 	width: 1000px;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
@@ -244,7 +243,7 @@ header p {
 
 .credits h1 {
 	color: #5CE1E6;
-	font-family: 'Poppins';
+	font-family: 'Fira Sans';
 	font-size: 18pt;
 	line-height: 18pt;
 	text-align: center;
@@ -272,7 +271,7 @@ header p {
 
 .credits .card_credit h3 {
 	font-size: 12pt;
-	font-family: 'Poppins';
+	font-family: 'Fira Sans';
 	color: #ffff;
 	opacity: 0.8;
 	margin-bottom: 5px;
@@ -313,26 +312,30 @@ header p {
 }
 .container_cards {
 	text-align: center;
-	background-color: #000;
 	max-width: 1000px;
-	width: fit-content;
-	position: relative;
+	width: 880px;
+	position: absolute;
 	left: 50%;
-	transform: translateX(-50%) scale(1.02);
+	top: 50%;
+	transform: translate(-50%, -50%) scale(1.13);
 }
 
 .activity {
-	position: absolute;
-	margin-top: 100px;
+	position: relative;
+	top: 0px;
+	margin-top: 10px;
 	width: 900px;
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
+	height: 100vh;
 }
 
 .activity h1 {
+	position: relative;
+	top: 50px;
 	color: #5CE1E6;
-	font-family: 'Poppins';
+	font-family: 'Fira Sans';
 	font-size: 18pt;
 	line-height: 18pt;
 	text-align: center;
@@ -343,12 +346,12 @@ header p {
 .activity .card_credit {
 	position: relative;
 	text-align: center;
-	background-color: rgb(92, 225, 230, 0.1);
+	background-color: rgb(11, 36, 73);
 	border-radius: 15px;
 	width: 200px;
 	height: 200px;
 	float: left;
-	margin: 10px 10px 10px 10px;
+	margin: 10px;
 	transition: 0.2s ease;
 	box-shadow: 0px 0px 4px rgb(0,0,0,0.3);
 }
@@ -359,7 +362,7 @@ header p {
 
 .activity .card_credit h3 {
 	font-size: 10pt;
-	font-family: 'Poppins';
+	font-family: 'Fira Sans';
 	color: #ffff;
 	opacity: 0.8;
 	margin-bottom: 2px;
@@ -399,14 +402,6 @@ header p {
 	top: 0px;
 }
 
-img[src="png/logo-white.png"], img[src="png/tda-iecse.png"] {
-	z-index: 9999;
-	position: absolute;
-	left: 50%;
-	top: 50px;
-	transform: translateX(-50%) translateY(-50%);
-}
-
 .activity .card_credit a {
 	position: relative;
 	background: rgb(255,255,255,0.25);
@@ -442,7 +437,7 @@ img[src="png/logo-white.png"], img[src="png/tda-iecse.png"] {
 .status {
 	text-align: center;
 	position: absolute;
-	font-family: 'Poppins';
+	font-family: 'Fira Sans';
 	font-weight: normal;
 	font-size: 7pt;
 	text-decoration: none;
@@ -496,7 +491,7 @@ input[type="checkbox"]:checked {
 }
 
 input[type="checkbox"]:checked:after {
-	color: #001450;
+	color: #020f38;
 }
 
 input[id="all"]:after {
@@ -512,9 +507,242 @@ input[id="2022"]:after {
 	content: '2022';
 }
 
-.filters {
+/*.filters {
 	position: absolute;
+	right: 22px;
+	top: 50;
+}*/
+
+.about-tda {
+	position: relative;
+	margin-top: 20px;
+	height: fit-content;
+	width: 1000px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+.about-tda h1,.advisory-board h1, .board h1, .mancomm h1 {
+	color: #5CE1E6;
+	font-family: 'Fira Sans';
+	font-size: 18pt;
+	line-height: 18pt;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.about-tda p {
+	color: rgb(255,255,255,0.5);
+	font-size: 9pt;
+	text-align: left;
+	width: 65%;
+	font-family: 'Fira Sans';
+	position: relative;
 	left: 0;
+	margin-bottom: 50px;
+}
+
+.video-placeholder {
+	position: absolute;
+	width: 300px;
+	height: 150px;
+	border-radius: 20px;
+	background-color: #000;
+	right: 0;
+	top: 30px;
+}
+
+.advisory-board {
+	position: relative;
+	width: 800px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: fit-content;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+.board {
+	position: relative;
+	width: 800px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: fit-content;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.mancomm {
+	width: 1000px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.mancomm-table {
+	height: 230px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	margin-bottom: 40px;
+}
+
+.mancomm table {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1000px;
+	color: rgb(255,255,255,0.7);
+	text-align: center;
+	border-spacing: 20px 15px;
+}
+
+.mancomm table td {
+	background-color: rgb(92, 225, 230, 0.1);
+	border-radius: 7px;
+	line-height: 30pt;
+	font-size: 9pt;
+	font-family: 'Fira Sans';
+	text-transform: uppercase;
+}
+
+.advisory-board .card_credit, .board .card_credit {
+	text-align: center;
+	font-family: 'Fira Sans';
+	margin: 0 30px 0 30px;
+	width: 200px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.advisory-board .card_credit img, .board .card_credit img {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+}
+
+.advisory-board .card_credit h3, .board .card_credit h3 {
+	color: rgb(255,255,255,0.8);
+	font-size: 12pt;
+	margin-top: 5px;
+}
+
+.advisory-board .card_credit h4, .board .card_credit h4 {
+	color: rgb(255,255,255,0.4);
+	font-size: 9pt;
+	font-weight: normal;
+}
+
+.contact {
+	position: relative;
+	top: 50%;
+	width: 800px;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%) scale(1.1);
+	text-align: left;
+	margin-top: 30px;
+}
+
+.contact h3 {
+	color: #5CE1E6;
+	font-size: 18pt;
+	font-family: 'Fira Sans';
+	margin-bottom: 15px;
+}
+
+.contact h4 {
+	color: rgb(255,255,255,0.7);
+	font-family: 'Fira Sans';
+	font-size: 12pt;
+	margin-top: 20px;
+}
+
+.contact p, .contact a {
+	font-family: 'Fira Sans';
+	font-size: 10pt;
+	color: rgb(255,255,255,0.4);
+	margin-top: 5px;
+	line-height: 16pt;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.contact a u {
+	border-bottom: 1.5px dotted rgb(255,255,255, 0.4);
+	text-decoration: none;
+}
+
+.contact form {
+	background: rgb(92, 225, 230, 0.1);
+	position: absolute;
 	top: 0;
-	transform: translateY(+15%);
+	right: 0;
+	border-radius: 10px;
+	width: 200px;
+	padding: 15px 25px 15px 15px;
+	box-shadow : 4px 4px rgb(92, 225, 230, 0.3);
+}
+
+.contact form h4 {
+	color: rgb(255,255,255, 0.5);
+	font-weight: normal;
+	font-family: 'Roboto';
+	font-size: 9pt;
+	margin: 0px;
+}
+
+.contact form input[type="text"], .contact form textarea {
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	outline: none;
+	border: none;
+	background-color: rgb(92, 225, 230, 0.1);
+	resize: none;
+	padding: 7px 5px;
+	color: rgb(255,255,255,0.7);
+	font-family: 'Ubuntu';
+	font-size: 9pt;
+}
+
+.contact form button {
+	position: absolute;
+	right: 0;
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	outline: none;
+	border: none;
+	background-color: #5CE1E6;
+	color: #020f38;
+	font-size: 14pt;
+	cursor: pointer;
+	transform: translateX(+50%);
+}
+
+.contact form button i {
+	transform: translateX(-10%);
+}
+
+.contact-container {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1000px;
+	height: 80vh;
+}
+
+.background {
+	top: 0;
+	background: url(../jpg/moneyball.jpg) rgba(0,0,0,0.6);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: multiply;
+	background-attachment: scroll;
+	height: 100vh;
+	width: 100%;
+	position: absolute;
 }
