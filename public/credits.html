@@ -14,7 +14,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
-<body>
+<body onload="myFunction()">
 	<header style="height: 84vh;">
 		<nav>
 			<div class="main">
@@ -91,6 +91,16 @@
 			</div>
 		</div>
 	</footer>
+	<div id="loader-wrapper">
+		<span class="loader"><img src="logo-cyan.png" height="70px">
+	</div>
+	<script>
+		var preloader = document.getElementById('loader-wrapper');
+
+		function myFunction() {
+			preloader.style.display = 'none';
+		}
+	</script>
 </body>
 
 </html>
