@@ -1,3 +1,16 @@
 html {
     scroll-behavior: smooth;
 }
+
+.background {
+	top: 0;
+	background: url(../jpg/moneyball.jpg) rgba(0,0,0,0.6);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: multiply;
+	background-attachment: scroll;
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+}
