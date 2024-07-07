@@ -212,7 +212,7 @@ footer h3 {
 	width: 1000px;
 	left: 50%;
 	transform: translateX(-50%);
-	height: 54.3vh;
+	height: 57.5vh;
 }
 
 .intro h1 {
@@ -247,7 +247,7 @@ footer h3 {
 	font-size: 18pt;
 	line-height: 18pt;
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 40px;
 }
 
 .credits .card_credit {
@@ -313,27 +313,26 @@ footer h3 {
 .container_cards {
 	text-align: center;
 	max-width: 1000px;
-	width: 880px;
-	position: absolute;
+	width: fit-content;
+	position: relative;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%) scale(1.13);
+	transform: translate(-50%, -50%);
 }
 
 .activity {
 	position: relative;
 	top: 0px;
 	margin-top: 10px;
-	width: 900px;
+	width: 1000px;
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
-	height: 100vh;
 }
 
 .activity h1 {
 	position: relative;
-	top: 50px;
+	top: 0;
 	color: #5CE1E6;
 	font-family: 'Fira Sans';
 	font-size: 18pt;
@@ -348,8 +347,8 @@ footer h3 {
 	text-align: center;
 	background-color: rgb(11, 36, 73);
 	border-radius: 15px;
-	width: 200px;
-	height: 200px;
+	width: 230px;
+	height: 230px;
 	float: left;
 	margin: 10px;
 	transition: 0.2s ease;
@@ -509,7 +508,8 @@ input[id="2022"]:after {
 
 .filters {
 	position: absolute;
-	top: 100px;
+	top: 0px;
+	right: 0;
 }
 
 .about-tda {
@@ -542,16 +542,6 @@ input[id="2022"]:after {
 	margin-bottom: 50px;
 }
 
-.video-placeholder {
-	position: absolute;
-	width: 300px;
-	height: 150px;
-	border-radius: 20px;
-	background-color: #000;
-	right: 0;
-	top: 30px;
-}
-
 .advisory-board {
 	position: relative;
 	width: 800px;
@@ -561,7 +551,6 @@ input[id="2022"]:after {
 	text-align: center;
 	margin-bottom: 10px;
 }
-
 
 .board {
 	position: relative;
