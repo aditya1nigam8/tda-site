@@ -2,14 +2,15 @@
 
 <head>
 	<title>The Data Alchemists</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel="icon" type="image/png" href="svg/logo.svg" />
-	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/home-style.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/home-style.css">
 	<script src="https://kit.fontawesome.com/313e34ec65.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
@@ -30,100 +31,99 @@
 					<li><a href="alumni.html">Alumni</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
+				<div class="menu-cont">
+					<img src="./img/alt-hamburger.svg" width="30px">
+				</div>
 			</div>
 		</nav>
 	</header>
-		<div class="activity">
-			<form id="filters" class="filters">
-				<input type="checkbox" id="all"  onclick="update_cards()">
-				<input type="checkbox" id="2024" onclick="update_cards()">
-				<input type="checkbox" id="2023" onclick="update_cards()">
-				<input type="checkbox" id="2022" onclick="update_cards()">
-			</form>
-			<h1>Club Events & Activities</h1>
-			<div id="event_cards" class="container_cards">
-				<a href="#">
-					<div class="card_credit">
-						<div class="status upcoming">UPCOMING</div>
-						<div class="container_image"><img id="bg" src="activity/among-us.jpg"/></div>
-						<h3>Among Us `24</h3>
-						<h4>Interclub Hackathon • Competition</h4>
-						<h4><i class="fa-solid fa-calendar-days"></i> 8 Aug – 10 Aug, 2024</h4>
-						<h4><i class="fa-solid fa-location-dot"></i> Hybrid</h4>
-					</div>
-				</a>
-				<a href="#">
-					<div class="card_credit">
-						<div class="status ongoing">ONGOING</div>
-						<div class="container_image"><img id="bg" src="activity/summer-bootcamp.jpg" /></div>
-						<h3>Summer Bootcamp `24</h3>
-						<h4>Learning Bootcamp • Taskphase</h4>
-						<h4><i class="fa-solid fa-calendar-days"></i> 19 Jun – 18 Jul, 2024</h4>
-						<h4><i class="fa-solid fa-location-dot"></i> Online</h4>
-					</div>
-				</a>
-				<a href="#">
-					<div class="card_credit">
-						<div class="status completed">COMPLETED</div>
-						<div class="container_image"><img id="bg" src="activity/datavista.jpg" /></div>
-						<h3>DataVista `24</h3>
-						<h4>Techweek • Workshops • Hackathon</h4>
-						<h4><i class="fa-solid fa-calendar-days"></i> 8 Jan – 18 Jan, 2024</h4>
-						<h4><i class="fa-solid fa-location-dot"></i> Hybrid</h4>
-					</div>
-				</a>
-				<a href="#">
-					<div class="card_credit">
-						<div class="status completed">COMPLETED</div>
-						<div class="container_image"><img id="bg" src="activity/mit-gpt.jpg" /></div>
-						<h3>MIT-GPT `23</h3>
-						<h4>TechTatva • Workshops • Hackathon</h4>
-						<h4><i class="fa-solid fa-calendar-days"></i> 16 Oct – 19 Oct, 2024</h4>
-						<h4><i class="fa-solid fa-location-dot"></i> TechTatva 2023</h4>
-					</div>
-				</a>
-				<a href="#">
-					<div class="card_credit">
-						<div class="status completed">COMPLETED</div>
-						<div class="container_image"><img id="bg" src="activity/board-transfer.jpg"/></div>
-						<h3>Board Transfer `24</h3>
-						<h4>TDA's first ever Board Transfer</h4>
-						<h4><i class="fa-solid fa-calendar-days"></i> 8 Sep, 2023</h4>
-						<h4><i class="fa-solid fa-location-dot"></i> Sir M V Seminar Hall, AB-2</h4>
-					</div>
-				</a>
-				<a href="#">
-					<div class="card_credit">
-						<div class="status completed">COMPLETED</div>
-						<div class="container_image"><img id="bg" src="activity/storytelling-hackathon.jpg" /></div>
-						<h3>Storytelling Hackathon</h3>
-						<h4>Hackathon • kaggle • Creativity</h4>
-						<h4><i class="fa-solid fa-calendar-days"></i> 8 Apr – 9 Apr, 2023</h4>
-						<h4><i class="fa-solid fa-location-dot"></i> Hybrid</h4>
-					</div>
-				</a>
-				<a href="#">
-					<div class="card_credit">
-						<div class="status completed">COMPLETED</div>
-						<div class="container_image"><img id="bg" src="activity/techweek-2023.jpg" /></div>
-						<h3>Techweek `23</h3>
-						<h4>Techweek • Workshops • Hackathon</h4>
-						<h4><i class="fa-solid fa-calendar-days"></i> 3 Jan – 13 Jan, 2023</h4>
-						<h4><i class="fa-solid fa-location-dot"></i> Hybrid</h4>
-					</div>
-				</a>
-				<a href="#">
-					<div class="card_credit">
-						<div class="container_image"><img id="bg" src="activity/club-induction.jpg" /></div>
-						<h3>Club Induction</h3>
-						<h4>The Alchemy begins...</h4>
-					</div>
-				</a>
-			</div>
-  </div>
-    <script src="/javascripts/activity.js"> </script>
-  
-  <footer>
+	<div class="activity">
+		<h1>Club Activities</h1>
+		<div class="container_cards">
+			<a href="#">
+				<div class="card_credit">
+					<div class="status upcoming">UPCOMING</div>
+					<div class="container_image"><img src="activity/default.jpg" /></div>
+					<h3>Among Us `24</h3>
+					<h4>Interclub Hackathon • Competition</h4>
+					<h4><i class="fa-solid fa-calendar-days"></i> 8 Aug – 10 Aug, 2024</h4>
+					<h4><i class="fa-solid fa-location-dot"></i> Hybrid</h4>
+				</div>
+			</a>
+			<a href="#">
+				<div class="card_credit">
+					<div class="status completed">COMPLETED</div>
+					<div class="container_image"><img src="activity/default.jpg" /></div>
+					<h3>Among Us `24</h3>
+					<h4>Interclub Hackathon • Competition</h4>
+					<h4><i class="fa-solid fa-calendar-days"></i> 8 Aug – 10 Aug, 2024</h4>
+					<h4><i class="fa-solid fa-location-dot"></i> Hybrid</h4>
+				</div>
+			</a>
+			<a href="#">
+				<div class="card_credit">
+					<div class="status completed">COMPLETED</div>
+					<div class="container_image"><img src="activity/default.jpg" /></div>
+					<h3>Among Us `24</h3>
+					<h4>Interclub Hackathon • Competition</h4>
+					<h4><i class="fa-solid fa-calendar-days"></i> 8 Aug – 10 Aug, 2024</h4>
+					<h4><i class="fa-solid fa-location-dot"></i> Hybrid</h4>
+				</div>
+			</a>
+			<a href="#">
+				<div class="card_credit">
+					<div class="status completed">COMPLETED</div>
+					<div class="container_image"><img src="activity/default.jpg" /></div>
+					<h3>Among Us `24</h3>
+					<h4>Interclub Hackathon • Competition</h4>
+					<h4><i class="fa-solid fa-calendar-days"></i> 8 Aug – 10 Aug, 2024</h4>
+					<h4><i class="fa-solid fa-location-dot"></i> Hybrid</h4>
+				</div>
+			</a>
+			<a href="#">
+				<div class="card_credit">
+					<div class="status completed">COMPLETED</div>
+					<div class="container_image"><img src="activity/default.jpg" /></div>
+					<h3>Among Us `24</h3>
+					<h4>Interclub Hackathon • Competition</h4>
+					<h4><i class="fa-solid fa-calendar-days"></i> 8 Aug – 10 Aug, 2024</h4>
+					<h4><i class="fa-solid fa-location-dot"></i> Hybrid</h4>
+				</div>
+			</a>
+			<a href="#">
+				<div class="card_credit">
+					<div class="status completed">COMPLETED</div>
+					<div class="container_image"><img src="activity/default.jpg" /></div>
+					<h3>Among Us `24</h3>
+					<h4>Interclub Hackathon • Competition</h4>
+					<h4><i class="fa-solid fa-calendar-days"></i> 8 Aug – 10 Aug, 2024</h4>
+					<h4><i class="fa-solid fa-location-dot"></i> Hybrid</h4>
+				</div>
+			</a>
+			<a href="#">
+				<div class="card_credit">
+					<div class="status completed">COMPLETED</div>
+					<div class="container_image"><img src="activity/default.jpg" /></div>
+					<h3>Among Us `24</h3>
+					<h4>Interclub Hackathon • Competition</h4>
+					<h4><i class="fa-solid fa-calendar-days"></i> 8 Aug – 10 Aug, 2024</h4>
+					<h4><i class="fa-solid fa-location-dot"></i> Hybrid</h4>
+				</div>
+			</a>
+			<a href="#">
+				<div class="card_credit">
+					<div class="status completed">COMPLETED</div>
+					<div class="container_image"><img src="activity/default.jpg" /></div>
+					<h3>Among Us `24</h3>
+					<h4>Interclub Hackathon • Competition</h4>
+					<h4><i class="fa-solid fa-calendar-days"></i> 8 Aug – 10 Aug, 2024</h4>
+					<h4><i class="fa-solid fa-location-dot"></i> Hybrid</h4>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<footer>
 		<h2>Made with ❤️ by <a href="credits.html"><u>Team TDA</u></a></h2>
 		<h3>Copyright © 2024, The Data Alchemists. All Rights Reserved.</h3>
 		<div class="redirect">
