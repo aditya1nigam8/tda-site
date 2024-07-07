@@ -8,13 +8,11 @@ function update_cards() {
   for (const checkbox of checkboxes) {
     if (checkbox.id == "all" && checkbox.checked){
       filters = [];
-      console.log("here");
       break;
     }
     else if (checkbox.checked)
       filters.push(checkbox.id);
   }
-  console.log(`Filters: ${filters}`);
   if (filters.length == 0){
     dynamic_events_list = [...events_list];
   }
