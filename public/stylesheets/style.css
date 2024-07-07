@@ -35,7 +35,7 @@ header {
 	min-height: 85px;
 }
 .insta {
-	margin-top: 25px;
+	margin-top: 20px;
 	display: inline-block;
 }
 
@@ -57,7 +57,7 @@ nav {
 ul {
 	list-style-type: none;
 	float: right;
-	margin-top: 25px;
+	margin-top: 20px;
 	border-radius: 1000px;
 	transition: 0.2s ease;
 }
