@@ -1,8 +1,8 @@
 STATUS, IMAGE_URL,EVENT_NAME, DESC, DATE, LOC
-ONGOING,activity/summer-bootcamp.jpg,Summer Bootcamp `24,Learning Bootcamp • Taskphase, 19 Jun – 18 Jul 2024, Online
-COMPLETED,activity/datavista.jpg,DataVista `24,Techweek • Workshops • Hackathon, 8 Aug – 10 Aug 2024, Hybrid
-COMPLETED,activity/mit-gpt.jpg,MIT-GPT `23,TechTatva • Workshops • Hackathon, 16 Oct – 19 Oct 2024, TechTatva 2023
-COMPLETED,activity/board-transfer.jpg,Board Transfer `24,TDA's first ever Board Transfer, 8 Jan 2024, Sir M V Seminar Hall AB-2
-COMPLETED,activity/default.jpg,Among Us `24,Interclub Hackathon • Competition, 8 Aug – 10 Aug 2024, Hybrid
-COMPLETED,activity/default.jpg,Among Us `24,Interclub Hackathon • Competition, 8 Aug – 10 Aug 2024, Hybrid
-COMPLETED,activity/default.jpg,Among Us `24,Interclub Hackathon • Competition, 8 Aug – 10 Aug 2024, Hybrid
+UPCOMING,activity/among-us.jpg, Among Us `24, Interclub Hackathon • Competition, 8 Aug – 10 Aug 2024, Hybrid
+ONGOING,activity/summer-bootcamp.jpg, Summer Bootcamp `24, Learning Bootcamp • Taskphase, 19 Jun – 18 Jul 2024, Online
+COMPLETED,activity/datavista.jpg, DataVista `24, Techweek • Workshops • Hackathon, 8 Jan – 18 Jan 2024, Hybrid
+COMPLETED,activity/mit-gpt.jpg, MIT-GPT `23, TechTatva • Workshops • Hackathon, 16 Oct – 19 Oct 2024, TechTatva 2023
+COMPLETED,activity/board-transfer.jpg, Board Transfer `24, TDA's first ever Board Transfer, 8 Sep 2023, Sir M V Seminar Hall, AB-2
+COMPLETED,activity/storytelling-hackathon.jpg, Storytelling Hackathon, Hackathon • kaggle • Creativity, 8 Apr – 9 Apr 2023, Hybrid
+COMPLETED,activity/techweek-2023.jpg, Techweek `23, Techweek • Workshops • Hackathon, 3 Jan – 13 Jan 2023, Hybrid

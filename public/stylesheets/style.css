@@ -507,11 +507,10 @@ input[id="2022"]:after {
 	content: '2022';
 }
 
-/*.filters {
+.filters {
 	position: absolute;
-	right: 22px;
-	top: 50;
-}*/
+	top: 100px;
+}
 
 .about-tda {
 	position: relative;

@@ -46,7 +46,13 @@
 	<a name="activity"></a>
 	<div class="activity">
 		<h1>Club Events & Activities</h1>
-		<div class="container_cards">
+        <form id="filters" class="filters">
+			<input type="checkbox" id="all"  onclick="update_cards()">
+			<input type="checkbox" id="2024" onclick="update_cards()">
+			<input type="checkbox" id="2023" onclick="update_cards()">
+			<input type="checkbox" id="2022" onclick="update_cards()">
+		</form>
+		<div id="event_cards" class="container_cards">
 			<a href="#">
 				<div class="card_credit">
 					<div class="status upcoming">UPCOMING</div>
@@ -124,6 +130,7 @@
 					<h4>The Alchemy begins...</h4>
 				</div>
 			</a>
+
 		</div>
 	</div>
 
@@ -496,25 +503,27 @@
 	<script>
 
 
-		"use strict";
+	 "use strict";
 
-		const htmlTag = document.querySelector('html');
-		const bodyTag = document.querySelector('body');
-		const myNav = document.querySelector('nav');
-		const myElem = document.querySelector('nav li a');
-
-
-		let scrolled = () => {
-			let dec = scrollY / (bodyTag.scrollHeight - innerHeight);
-			return Math.floor(dec * 100);
-		}
+	 const htmlTag = document.querySelector('html');
+	 const bodyTag = document.querySelector('body');
+	 const myNav = document.querySelector('nav');
+	 const myElem = document.querySelector('nav li a');
 
 
-		addEventListener('scroll', () => {
-			myNav.style.setProperty('background', scrolled() > 10 ? "var(--color2)" : "var(--color1)");
-		})
+	 let scrolled = () => {
+		 let dec = scrollY / (bodyTag.scrollHeight - innerHeight);
+		 return Math.floor(dec * 100);
+	 }
+
+
+	 addEventListener('scroll', () => {
+		 myNav.style.setProperty('background', scrolled() > 10 ? "var(--color2)" : "var(--color1)");
+	 })
 
 	</script>
+    <script src="/javascripts/activity.js"> </script>
+
 </body>
 
 </html>
