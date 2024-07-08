@@ -45,6 +45,28 @@ function update_cards() {
   }
 }
 
+const allCheckbox = document.getElementById('all');
+
+allCheckbox.addEventListener('change', (event) => {
+  if (event.currentTarget.checked) {
+    for (var cb of checkboxes) {
+      if (cb.id == "all")
+        continue;
+      else
+        cb.checked = false;
+    }
+  }
+  update_cards();
+});
+
+for(var cb of checkboxes){
+  if(cb.id == "all")
+    continue;
+  cb.addEventListener('change', (event)=>{
+    allCheckbox.checked = false;
+  })
+}
+
 fetch('/api/event-list')
   .then(response => response.json())
   .then(data => {
