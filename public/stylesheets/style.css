@@ -769,3 +769,20 @@ input[id="2022"]:after {
 		height: 220px;
 	}
 	}
+
+	.social {
+		position: relative;
+		max-width: 1000px;
+		width: 1000px;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 100vh;
+		margin: 30px 0 30px 0;
+	}
+
+	.insta-feed {		
+		border-radius: 20px;
+		overflow: hidden;
+		width: fit-content;
+		height: 362px;
+	}
