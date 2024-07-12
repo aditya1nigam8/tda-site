@@ -4,8 +4,8 @@
 }
 
 * {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 ::-webkit-scrollbar {
@@ -13,35 +13,36 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(0,0,0,0.2);
+	background: rgb(0, 0, 0, 0.2);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(255,255,255,0.3);
-  border-radius: 1000px;
+	background: rgb(255, 255, 255, 0.3);
+	border-radius: 1000px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #E7E7E7;
+	background: #E7E7E7;
 }
 
 body {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    background-color: #020f38;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background-color: #020f38;
 }
 
 header {
 	min-height: 85px;
 }
+
 .insta {
 	margin-top: 20px;
 	display: inline-block;
 }
 
 .insta img {
-    height: 30px;
-    width: auto;
+	height: 30px;
+	width: auto;
 }
 
 nav {
@@ -81,38 +82,38 @@ ul li a {
 }
 
 ul li a:hover {
-    border-radius: 1000px;
-    background: #09285B;
-    color: #ffff;
+	border-radius: 1000px;
+	background: #09285B;
+	color: #ffff;
 }
 
-.main{
+.main {
 	max-width: 1000px;
 	margin: auto;
 }
 
 .active {
-    border-radius: 1000px;
-    background: #5CE1E6;
+	border-radius: 1000px;
+	background: #5CE1E6;
 }
 
 .active a {
-    color: #020f38;
+	color: #020f38;
 }
 
 .active a:hover {
 	border-radius: 1000px;
-    background: #5CE1E6;
+	background: #5CE1E6;
 	color: #020f38;
 	padding: 5px 15px;
 }
 
 footer {
-    position: relative;
-    height: 90px;
-    width: 100%;
-    bottom: 0;
-    background: rgb(255,255,255,0.04);
+	position: relative;
+	height: 90px;
+	width: 100%;
+	bottom: 0;
+	background: rgb(255, 255, 255, 0.04);
 	padding-top: 15px;
 	text-align: left;
 }
@@ -134,7 +135,7 @@ footer h2 a {
 }
 
 footer h2 a u {
-	border-bottom: 1.5px dotted rgb(255,255,255);
+	border-bottom: 1.5px dotted rgb(255, 255, 255);
 	text-decoration: none;
 }
 
@@ -161,7 +162,7 @@ footer h3 {
 
 .redirect a {
 	position: relative;
-	background: rgb(255,255,255,0.25);
+	background: rgb(255, 255, 255, 0.25);
 	width: 30px;
 	height: 30px;
 	margin-right: 2px;
@@ -189,7 +190,7 @@ footer h3 {
 	position: relative;
 	display: inline-block;
 	border-radius: 1000px;
-	background: rgb(255,255,255,0.5);
+	background: rgb(255, 255, 255, 0.5);
 	height: 50px;
 	width: 2px;
 	margin-left: 5px;
@@ -203,6 +204,7 @@ footer h3 {
 	transform: translateY(+20%);
 	text-align: right;
 }
+
 .logos-footer img {
 	display: inline-block;
 }
@@ -265,7 +267,7 @@ footer h3 {
 }
 
 .credits .card_credit:hover {
-	background-color: rgb(255,255,255,0.03);
+	background-color: rgb(255, 255, 255, 0.03);
 	transform: scale(1.1);
 }
 
@@ -287,7 +289,7 @@ footer h3 {
 
 .credits .card_credit a {
 	position: relative;
-	background: rgb(255,255,255,0.25);
+	background: rgb(255, 255, 255, 0.25);
 	width: 30px;
 	height: 30px;
 	margin-right: 2px;
@@ -310,6 +312,7 @@ footer h3 {
 	color: #000;
 	opacity: 1;
 }
+
 .container_cards {
 	text-align: center;
 	max-width: 1000px;
@@ -353,7 +356,7 @@ footer h3 {
 	float: left;
 	margin: 10px;
 	transition: 0.2s ease;
-	box-shadow: 0px 0px 4px rgb(0,0,0,0.3);
+	box-shadow: 0px 0px 4px rgb(0, 0, 0, 0.3);
 	transform: scale(1.0);
 }
 
@@ -397,7 +400,7 @@ footer h3 {
 	background-color: #000;
 }
 
-#bg{
+#bg {
 	width: 100%;
 	height: auto;
 	top: 0px;
@@ -405,7 +408,7 @@ footer h3 {
 
 .activity .card_credit a {
 	position: relative;
-	background: rgb(255,255,255,0.25);
+	background: rgb(255, 255, 255, 0.25);
 	width: 30px;
 	height: 30px;
 	margin-right: 2px;
@@ -462,10 +465,10 @@ footer h3 {
 
 .completed {
 	color: lightgreen;
-	background-color: rgb(0,255,0,0.12);
+	background-color: rgb(0, 255, 0, 0.12);
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
 	appearance: none;
 	-webkit-appearance: none;
 	background: none;
@@ -498,12 +501,15 @@ input[type="checkbox"]:checked:after {
 input[id="all"]:after {
 	content: 'All';
 }
+
 input[id="2024"]:after {
 	content: '2024';
 }
+
 input[id="2023"]:after {
 	content: '2023';
 }
+
 input[id="2022"]:after {
 	content: '2022';
 }
@@ -533,8 +539,13 @@ input[id="2022"]:after {
 	text-align: center;
 }
 
-.about-tda h1,.advisory-board h1, .board h1, .mancomm h1 {
-	margin-top: 20px;
+.about-tda h1,
+.advisory-board h1,
+.board h1,
+.mancomm h1,
+.domain h1,
+.social h1 {
+	margin-top: 30px;
 	color: #5CE1E6;
 	font-family: 'Fira Sans';
 	font-size: 18pt;
@@ -543,15 +554,17 @@ input[id="2022"]:after {
 	margin-bottom: 20px;
 }
 
-.about-tda p {
-	color: rgb(255,255,255,0.5);
+.about-tda p,
+.domain p {
+	color: rgb(255, 255, 255, 0.5);
 	font-size: 11pt;
-	text-align: center;
-	width: 100%;
+	text-align: left;
+	width: 90%;
 	font-family: 'Fira Sans';
 	position: relative;
-	left: 0;
-	margin-bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 20px;
 }
 
 .advisory-board {
@@ -593,7 +606,7 @@ input[id="2022"]:after {
 	left: 50%;
 	transform: translateX(-50%);
 	width: 1000px;
-	color: rgb(255,255,255,0.7);
+	color: rgb(255, 255, 255, 0.7);
 	text-align: center;
 	border-spacing: 20px 15px;
 }
@@ -607,7 +620,8 @@ input[id="2022"]:after {
 	text-transform: uppercase;
 }
 
-.advisory-board .card_credit, .board .card_credit {
+.advisory-board .card_credit,
+.board .card_credit {
 	text-align: center;
 	font-family: 'Fira Sans';
 	margin: 20px;
@@ -616,20 +630,23 @@ input[id="2022"]:after {
 	margin-bottom: 20px;
 }
 
-.advisory-board .card_credit img, .board .card_credit img {
+.advisory-board .card_credit img,
+.board .card_credit img {
 	width: 100px;
 	height: 100px;
 	border-radius: 100%;
 }
 
-.advisory-board .card_credit h3, .board .card_credit h3 {
-	color: rgb(255,255,255,0.8);
+.advisory-board .card_credit h3,
+.board .card_credit h3 {
+	color: rgb(255, 255, 255, 0.8);
 	font-size: 12pt;
 	margin-top: 5px;
 }
 
-.advisory-board .card_credit h4, .board .card_credit h4 {
-	color: rgb(255,255,255,0.4);
+.advisory-board .card_credit h4,
+.board .card_credit h4 {
+	color: rgb(255, 255, 255, 0.4);
 	font-size: 9pt;
 	font-weight: normal;
 }
@@ -652,16 +669,17 @@ input[id="2022"]:after {
 }
 
 .contact h4 {
-	color: rgb(255,255,255,0.7);
+	color: rgb(255, 255, 255, 0.7);
 	font-family: 'Fira Sans';
 	font-size: 12pt;
 	margin-top: 20px;
 }
 
-.contact p, .contact a {
+.contact p,
+.contact a {
 	font-family: 'Fira Sans';
 	font-size: 10pt;
-	color: rgb(255,255,255,0.4);
+	color: rgb(255, 255, 255, 0.4);
 	margin-top: 5px;
 	line-height: 16pt;
 	text-decoration: none;
@@ -669,7 +687,7 @@ input[id="2022"]:after {
 }
 
 .contact a u {
-	border-bottom: 1.5px dotted rgb(255,255,255, 0.4);
+	border-bottom: 1.5px dotted rgb(255, 255, 255, 0.4);
 	text-decoration: none;
 }
 
@@ -681,18 +699,19 @@ input[id="2022"]:after {
 	border-radius: 10px;
 	width: 200px;
 	padding: 15px 25px 15px 15px;
-	box-shadow : 4px 4px rgb(92, 225, 230, 0.3);
+	box-shadow: 4px 4px rgb(92, 225, 230, 0.3);
 }
 
 .contact form h4 {
-	color: rgb(255,255,255, 0.5);
+	color: rgb(255, 255, 255, 0.5);
 	font-weight: normal;
 	font-family: 'Roboto';
 	font-size: 9pt;
 	margin: 0px;
 }
 
-.contact form input[type="text"], .contact form textarea {
+.contact form input[type="text"],
+.contact form textarea {
 	width: 100%;
 	margin-top: 5px;
 	margin-bottom: 15px;
@@ -702,7 +721,7 @@ input[id="2022"]:after {
 	background-color: rgb(92, 225, 230, 0.1);
 	resize: none;
 	padding: 7px 5px;
-	color: rgb(255,255,255,0.7);
+	color: rgb(255, 255, 255, 0.7);
 	font-family: 'Ubuntu';
 	font-size: 9pt;
 }
@@ -733,6 +752,7 @@ input[id="2022"]:after {
 	width: 1000px;
 	height: 80vh;
 }
+
 #loader-wrapper {
 	width: 100%;
 	height: 100vh;
@@ -748,41 +768,97 @@ input[id="2022"]:after {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translateX(-50%)	translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
 	text-align: center;
 	animation: 3s loader infinite;
 }
 
 @keyframes	loader {
-	0%{
+	0% {
 		opacity: 0%;
 		opacity: 100%;
 		height: 220px;
-		}
+	}
 
 	50% {
 		opacity: 15%;
 		height: 150px;
-		}
+	}
+
 	100% {
 		opacity: 100%;
 		height: 220px;
 	}
-	}
+}
 
-	.social {
-		position: relative;
-		max-width: 1000px;
-		width: 1000px;
-		left: 50%;
-		transform: translateX(-50%);
-		height: 100vh;
-		margin: 30px 0 30px 0;
-	}
+.social, .domain {
+	position: relative;
+	max-width: 1000px;
+	width: 1000px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: fit-content;
+	margin: 30px 0 30px 0;
+}
 
-	.insta-feed {		
-		border-radius: 20px;
-		overflow: hidden;
-		width: fit-content;
-		height: 362px;
-	}
+.insta-feed {
+	border-radius: 20px;
+	overflow: hidden;
+	width: fit-content;
+	height: 362px;
+}
+
+.domain-container {
+	text-align: center;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: fit-content;
+	max-width: 1000px;
+	margin-top: 10px;
+}
+
+.domain-container {
+	text-decoration: none;
+	color: #000;
+}
+
+.card_domain {
+	display: inline-block;
+	margin: 10px 10px;
+	width: 270px;
+	height: 180px;
+	background: rgb(11, 36, 73);
+	border-radius: 20px;
+	transition: 0.2s ease;
+	box-shadow: 0px 0px 4px rgb(0, 0, 0, 0.3);
+	transform: scale(1.0);
+}
+
+.card_domain:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 0px 15px 0px #5CE1E6;
+}
+
+.card_domain div {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.domain-container a div div img {
+	height: 80px;
+	margin-bottom: 5px;
+}
+
+.domain-container a div div h3 {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 200px;
+	font-size: 11pt;
+	text-align: center;
+	color: #5CE1E6;
+	font-family: 'Fira Sans';
+}
